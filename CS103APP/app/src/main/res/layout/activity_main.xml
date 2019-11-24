@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:weightSum="2" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_below="@id/forum"
+        android:background="#551a8b"
+        android:textColor="#ffff00"
+        android:id="@+id/logoutBtn"
+        android:text="Logout"/>
+
+    <ImageView
+        android:id="@+id/amesLogo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/college"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/textLine"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textColor="#000"-->
+        <!--android:text="AC/AMES CHAT"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="30dp" />-->
+
+    <Button
+        android:id="@+id/liveChat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/amesLogo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/chat"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp" />
+
+    <Button
+        android:id="@+id/forum"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/liveChat"
+        android:layout_below="@+id/amesLogo"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/liveChat"
+        android:background="@drawable/forum"
+        android:layout_toRightOf="@+id/liveChat"
+        android:layout_marginLeft="14dp" />
+
+
+    <TextView
+        android:layout_below="@+id/forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:text=""/>
+
+
+</RelativeLayout>
